@@ -16,7 +16,7 @@ export class Searchbar extends Component {
   handleSubmit = evt => {
     evt.preventDefault();
     if (this.state.imageName.trim() === '') {
-      Notiflix.Notify.warning('Enter your request');
+      Notiflix.Notify.warning('Please, enter your request');
       return;
     }
     this.props.onSubmit(this.state.imageName);
